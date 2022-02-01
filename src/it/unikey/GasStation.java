@@ -7,18 +7,30 @@ public class GasStation {
     private double initialQuantity = 0;
 
 
+    public void Refueling(double quanityPetrol) {
 
-    public void Refueling(double quanityPetrol){
-
-        for(int i = 0; i < quanityPetrol; i++){
+        for (int i = 0; i < quanityPetrol; i++) {
             initialQuantity++;
-        } if(quanityPetrol > petrolCapacity - initialQuantity)
+        }
+        if (quanityPetrol > petrolCapacity - initialQuantity)
             System.out.println("Non puoi rifornire questa quantità");
         else
             System.out.println("Hai rifornito " + initialQuantity);
 
-
-        //ciao prova di Roby 2.0
-        // ciao prova angela
     }
+
+    public void Sell(double quantityEuro) {
+
+        double litri = quantityEuro / petrolPrice;
+
+        System.out.println("Hai rifornito di  " + litri + " litri di carburante");
+
+    }
+
+    public void UpdatePrice(double price) {
+        petrolPrice = price;
+        System.out.println("Il nuovo prezzo della benzina è " + price);
+
+    }
+
 }
