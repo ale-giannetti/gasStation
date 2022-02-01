@@ -19,5 +19,11 @@ public class TypeOfFuel extends GasStation {
             System.out.println("Hai rifornito " + quanity);
     }
 
+    public void SellFuelGreen(String brand, String model, double Money){
+
+        double litri = Money / PriceGreen;
+        System.out.println("Hai rifornito la tua " + model + " di " + litri + " litri di  benzina");
+
+    }
 
 }
