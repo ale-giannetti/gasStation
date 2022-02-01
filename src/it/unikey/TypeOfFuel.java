@@ -26,4 +26,11 @@ public class TypeOfFuel extends GasStation {
 
     }
 
+    public void SellDisel(String brand, String model, double Money){
+
+        double litri = Money / PriceDisel;
+        System.out.println("Hai rifornito alla tua " + model + " di " + litri + " litri di  Disel");
+
+    }
+
 }
