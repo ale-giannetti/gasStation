@@ -4,12 +4,12 @@ public class TypeOfFuel extends GasStation {
 
     private static double PriceGreen = 5;
     private static double PriceDisel = 10;
+    private static double Maxcapacity = 2000;
+    private double capacity = 0;
 
     @Override
     public void Refueling(double quanity) {
-        double Maxcapacity = 2000;
-        double capacity = 0;
-
+        
         for (int i = 0; i < quanity; i++) {
             capacity++;
         }
